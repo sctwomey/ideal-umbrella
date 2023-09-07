@@ -17,7 +17,7 @@ body {
 .header {
     padding: 15px;
     background-color: #425664;
-    color: #F6F4F2;
+    width: 100%;
 }
 
 .header h1 {
@@ -29,7 +29,7 @@ body {
 
 .header nav {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 50px;
     float: right;
     font-size: 20px;
 }
@@ -51,7 +51,7 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    /* margin: 10px 100px 10px 200px; */
+    margin-left: 100px;
 }
 
 section {
@@ -61,11 +61,27 @@ section {
     margin: 25px;
 }
 
+.ws-page {
+    background-color: #C6AD8F;
+    padding: 25px;
+    width: 100%;
+    margin: 0px;
+    justify-content: flex-end;
+}
+
+.ws-page h1 {
+    color: #425664;
+    padding-right: 400px;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
 section h2 {
     font-size: 50px;
     border-right: 7px solid #425664;
     color: #6d4f2a;
     margin: 10px;
+    padding-right: 15px;
     text-align: center;
 }
 
@@ -73,33 +89,18 @@ section h2 {
     display: flex;
     width: 300px;
     justify-content: flex-end;
+
 }
 
 .layout-content {
     display: flex;
     flex: 3;
+    margin-left: 10px;
 }
 
 .layout-content p {
     width: 85%;
 }
-
-/* #am-font {
-    padding: 25px 10px 10px 10px;
-}
-
-#p-font {
-    padding: 10px 10px 10px;
-}
-
-#cm-font {
-    padding: 10px 10px 10px;
-} */
-
-/* section p {
-    margin: 20px;
-    padding: 20px;
-} */
 
 .projects-container {
     display: flex;
@@ -118,6 +119,7 @@ section h2 {
     width: 100%;
     border: 5px solid blue;
     gap: 20px;
+
 }
 
 .projects-column {
@@ -136,7 +138,7 @@ article {
     flex-direction: row;
     align-items: center;
     width: 90%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 20px;
 }
 
@@ -146,7 +148,7 @@ article .cm-layout {
 
 footer {
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     padding: 20px;
 }
 
