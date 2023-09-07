@@ -1,7 +1,6 @@
 /* Sets the starting layout for the webpage */
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -9,7 +8,7 @@
 /* Sets the primary background color for the webpage */
 
 body {
-    background-color: #d9dcd6;
+    background-color: #F6F4F2;
 }
 
 /* Sets the styling attributes for the header elements such as the compnay name and the navibar bar */
@@ -17,15 +16,14 @@ body {
 .header {
     padding: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #022636;
-    color: #ffffff;
+    background-color: #425664;
+    color: #F6F4F2;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 35px;
-    color: #022636;
-    background-color: #ac9f9f;
+    color: #C6AD8F;
     padding: 5px 15px 5px 40px;
 }
 
@@ -47,27 +45,66 @@ body {
 }
 
 a {
-    color: #ac9f9f;
-    text-decoration: underline;
+    color: #C6AD8F;
+    text-decoration: none;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 100px 10px 200px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+section {
+    display: flex;
+    flex: wrap;
+    margin: 25px;
+}
+
+section h2 {
     font-size: 50px;
+    border-right: 7px solid #425664;
+    color: #6d4f2a;
+    margin: 10px;
+    text-align: center;
 }
 
-.float-right {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #ac9f9f;
-    color: #ffffff;
+#am-font {
+    padding: 30px 10px 10px 10px;
+}
+
+#p-font {
+    padding: 80px 10px 10px 10px;
+}
+
+#cm-font {
+    padding: 50px 10px 10px 10px;
+}
+
+section p {
+    margin: 20px;
+    padding: 20px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.projects {
+    flex-wrap: wrap;
+}
+
+.projects div {
+    flex: 1 0 25%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #425664;
+    color: #F6F4F2;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
 }
