@@ -63,7 +63,7 @@ section {
 
 .ws-page {
     background-color: #C6AD8F;
-    padding: 25px;
+    padding: 35px;
     width: 100%;
     margin: 0px;
     justify-content: flex-end;
@@ -72,6 +72,7 @@ section {
 .ws-page h1 {
     color: #425664;
     padding-right: 400px;
+    margin-top: 25px;
     font-size: 35px;
     font-family: fantasy;
 }
@@ -89,7 +90,6 @@ section h2 {
     display: flex;
     width: 300px;
     justify-content: flex-end;
-
 }
 
 .layout-content {
@@ -133,6 +133,11 @@ section h2 {
     object-fit: cover;
 }
 
+.projects-column img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 article {
     display: flex;
     flex-direction: row;
@@ -144,6 +149,14 @@ article {
 
 article .cm-layout {
     border-bottom: 5px solid #425664;
+}
+
+article .cm-layout a {
+    color: #6d4f2a;
+}
+
+article .cm-layout a:hover {
+    color: #000000;
 }
 
 footer {
