@@ -15,7 +15,8 @@ body {
 /* Sets the styling attributes for the header elements such as the compnay name and the navibar bar */
 
 .header {
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     background-color: #425664;
     width: 100%;
 }
@@ -63,7 +64,7 @@ section {
 
 .ws-page {
     background-color: #C6AD8F;
-    padding: 35px;
+    padding-bottom: 20px;
     width: 100%;
     margin: 0px;
     justify-content: flex-end;
@@ -104,38 +105,38 @@ section h2 {
 
 .projects-container {
     display: flex;
-    flex-direction: column;
-    border: 5px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    /* border: 5px solid red; */
     gap: 20px;
     margin: 10px;
-    padding: 20px;
-    background-color: #425664;
-    color: #F6F4F2;
-}
-
-.projects-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border: 5px solid blue;
-    gap: 20px;
-
-}
-
-.projects-column {
-    display: flex;
-    flex: 1;
-    border: 5px solid green;
 }
 
 .projects-column img {
+    border: 5px solid #6d4f2a;
     width: 100%;
-    object-fit: cover;
+}
+
+.projects-column #a {
+    width: 1320px;
 }
 
 .projects-column img:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+.text-container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 40px;
+    background-color: #6d4f2a;
+    color: black;
+    padding: 10px 20px 10px 20px;
 }
 
 article {
